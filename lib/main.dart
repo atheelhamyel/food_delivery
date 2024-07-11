@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery/utils/app_theme.dart';
 import 'package:food_delivery/viwes/pages/custom_button_navbar.dart';
 void main() {
   runApp(const MyApp());
@@ -13,9 +14,7 @@ class MyApp extends StatelessWidget {
     debugShowCheckedModeBanner: false,
 
       title: 'Food Delivery',
-      theme: ThemeData(
-      
-      ),
+      theme: AppTheme.lightTheme(),
       home:const CustomBottonNavBar(),
     );
   }

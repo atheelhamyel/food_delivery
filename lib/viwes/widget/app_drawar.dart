@@ -5,8 +5,18 @@ class AppDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-               
+    return Drawer(
+        child: SafeArea(
+          child: Column(
+            children: [
+              const Text('Home Options'),
+              ListTile(
+                leading: const Icon(Icons.home), 
+                title: const Text('Home'), 
+                onTap: () {},
+              ),
+            ],
+          ),        ),
       );
   }
 }
